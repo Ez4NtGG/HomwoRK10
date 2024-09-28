@@ -6,7 +6,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hw10.settings")
 
 django.setup()
 
-from quotes.models import Quote, Tag, Author  # noqa
+from quotes.models import Quote, Tag, Author 
 from quotes.utils import get_mongodb
 
 

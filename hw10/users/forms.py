@@ -72,20 +72,6 @@ class LoginForm(AuthenticationForm):
             "username",
             "password",
         ]
-
-
-# class DeleteForm(forms.ModelForm):
-#     username = forms.CharField(
-#         max_length=100, required=True, widget=forms.HiddenInput()
-#     )
-
-#     class Meta:
-#         model = User
-#         fields = [
-#             "username",
-#         ]
-
-
 class ProfileForm(forms.ModelForm):
     avatar = forms.ImageField(widget=forms.FileInput(attrs={"class": "form-control"}))
 

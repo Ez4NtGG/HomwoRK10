@@ -11,17 +11,7 @@ from .models import Quote, Author, Tag
 from .froms import AuthorForm, QuoteForm, TagForm
 
 
-PER_PAGE = 4
-
-# def main_mongodb_version(request, page=1):
-#     from .utils import get_mongodb
-#     db = get_mongodb()
-#     quotes = db.quotes.find({}).limit(15)
-#     paginator = Paginator(list(quotes), per_page=PER_PAGE)
-
-#     context = {"quotes": paginator.page(page)}
-#     return render(request, "quotes/index.html", context)
-
+PER_PAGE = 4 
 
 def main(request, page=1):
     quotes = Quote.objects.all()

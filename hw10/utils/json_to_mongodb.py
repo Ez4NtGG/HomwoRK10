@@ -34,9 +34,6 @@ print(f"{URI=}")
 
 db = client.get_database(MongoDB_NAME)
 
-# with Path("quotes.json").open("r", encoding="UTF-8") as fd:
-#     quotes = json.load(fd)
-
 quotes = db.quotes.find({})
 
 for quote in quotes:

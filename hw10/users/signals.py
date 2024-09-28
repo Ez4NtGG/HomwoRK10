@@ -26,7 +26,6 @@ def save_profile(sender, instance, **kwargs):
 def delete_avatar(sender, instance, **kwargs):
     try:
         avatar = instance.profile.avatar
-        # mroot = settings.MEDIA_ROOT
         field = Profile._meta.get_field('avatar')
         default_value = field.get_default()
         print("**********  delete_avatar", avatar.name, avatar.path, default_value)

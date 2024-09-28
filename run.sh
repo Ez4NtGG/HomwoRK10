@@ -1,5 +1,3 @@
-#!/bin/sh
-
 echo Sleep 2...
 sleep 2
 cd hw10
